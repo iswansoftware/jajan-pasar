@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Manganopo</title>
+  </head>
+  <body>
+    <div id="loginForm" class="container">
+        <p>Jajan Pasar</p>
+        <button id="liffLoginButton" class="btn btn-primary">MASUK</button>
+    </div>
+    <div id="userHasLogin" class="container">        
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div id="profilePictureDiv"></div>   
+                        
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h5>Hallo <strong id="username"> </strong> Selamat Datang di Jajan Pasar</h5>
+                        <h6>Silakan pilih jajan yang dipesan</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <h2><strong>Makanan</strong></h2>
+                <div class="food-container"></div>
+            </div>
+            <div class="col-12">
+                <h2><strong>Minuman</strong></h2>
+                <div class="drink-container"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 ">
+                <h5>Ringkasan</h5>
+                <p>Pesanan : <strong><span class="sum-order-food"></span></strong> Makanan dan <strong><span class="sum-order-drink"></span></strong> Minuman</p>
+            </div>
+            <div class="col-6 d-flex justify-content-end flex-column align-items-end">
+                <p>Total : <span class="sum-of-price"></span></p>
+                <button id="sendMessageButton" class="btn btn-success btn-lg">Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button id="openWindowButton" class="btn btn-outline-primary">Buka di browser</button>
+                <button id="liffLogoutButton" class="btn btn-outline-danger">KELUAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="./liff-starter.js"></script>
+  </body>
+</html>
