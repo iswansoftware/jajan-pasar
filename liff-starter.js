@@ -147,7 +147,7 @@ function sendMessage() {
     ${data.sumOrderOfFood} Makanan
     ${data.sumOrderOfDrink} Minuman
     
-    Mohon menunggu pesanan diantar ya :)
+    Mohon menunggu pesanannya
     `
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
@@ -169,7 +169,7 @@ function sendMessage() {
 function openExternalBrowser() {
     document.getElementById('openWindowButton').addEventListener('click', function () {
         liff.openWindow({
-            url: 'https://manganopo.herokuapp.com/',
+            url: 'https://jajan-pasar.herokuapp.com',
             external: true
         });
     });
