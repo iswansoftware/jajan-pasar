@@ -146,6 +146,7 @@ function sendMessage() {
     Pesanannya :
     ${data.sumOrderOfFood} Makanan
     ${data.sumOrderOfDrink} Minuman
+    Total Pesanan ${data.sumOfPrice}    
     
     Mohon menunggu pesanannya
     `
